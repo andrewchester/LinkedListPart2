@@ -1,6 +1,4 @@
-#ifndef LIST_H
-#define LIST_H
-
+#pragma once
 #include <iostream>
 #include "node.h"
 #include "student.h"
@@ -29,5 +27,3 @@ class LinkedList {
   Node* end(); //Returns the last node in the list
   Node* begin(); //Returns the first node in the list
 };
-
-#endif

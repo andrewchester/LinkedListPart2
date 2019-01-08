@@ -4,9 +4,7 @@
  *  Created on: Dec 5, 2018
  *      Author: brend
  */
-
-#ifndef NODE_H_
-#define NODE_H_
+#pragma once
 
 #include <iostream>
 #include "student.h"
@@ -38,5 +36,3 @@ class Node {
 		Node* previous;
 		Node* next;
 };
-
-#endif /* NODE_H_ */

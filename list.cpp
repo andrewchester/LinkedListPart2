@@ -1,4 +1,5 @@
 #include <string.h>
+#include "node.h"
 #include "list.h"
 
 LinkedList::LinkedList(){ //Constructor, initialized a new empty list
@@ -15,9 +16,9 @@ std::ostream& operator<<(std::ostream& os, const LinkedList& list){
       continue;
   
     if(i == 0) //If it's the beginning of the list, print out the value
-      os << current->getValue()->getFirstName();
+      os << *(current->getValue()->getID());
     else //Otherwise, insert a space
-      os << " " << current->getValue()->getFirstName();
+      os << " " << *(current->getValue()->getID());
     
     current = current->nextNode(); //Set current to the next node in the array
   }

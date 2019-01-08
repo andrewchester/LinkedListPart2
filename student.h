@@ -1,6 +1,4 @@
-#ifndef STUDENT_H
-#define STUDENT_H
-
+#pragma once
 class Student{
 	private:
 		char* lname;
@@ -16,5 +14,3 @@ class Student{
 		int* getID();
 		int* getGPA();
 };
-
-#endif
