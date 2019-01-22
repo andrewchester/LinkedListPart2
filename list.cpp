@@ -70,17 +70,18 @@ void LinkedList::remove(int index){ //Removes a value from a certain index
   Node* node = at(index); //Get the node at the index
   Node* next = node->nextNode(); //Get the previous node
   Node* previous = node->previousNode(); //Get the next node
-
+  
   if(previous != 0)
     previous->setNext(next); //If previous isn't 0, then set it's next to next
   else
     this->first = next; //If there isn't a previous, then we're at the beginning and the next node is going to be the first node
-  
+ 
   if(next != 0)
     next->setPrevious(previous); //If next isn't 0, then set it's previous to previous
   else
     this->last = previous; //If there isn't a next, then we're at the end, and the previous node is going to be last
 
+  std::cout << node << " " << node->getValue()->getFirstName() << std::endl;
   delete node; //Remove the node since now it's not accessible
   length--; //Reduce the length of array
 }

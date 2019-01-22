@@ -6,8 +6,7 @@ Student::Student(){
 }
 
 Student::~Student(){
-	delete fname;
-	delete lname;
+	
 }
 
 char* Student::getLastName(){
